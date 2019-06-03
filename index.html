@@ -1,0 +1,118 @@
+<html>
+<a href="/">خانه</a>-
+<a href="/Handbook%20of%20Shaft%20Alignment.pdf">هندبوک هم محورسازی</a> -
+<a href="/reverseindicatorSHOT.png">روش Reverse</a> -
+<a href="/facerimSHOT.png">روش Face And Rim</a> -
+<a href="/doubleradialSHOT.png">روش Double Radial</a> -
+<a href="/shaftTOspoolSHOT.png">روش Shaft to Coupling Spool</a> -
+<a href="/telorance.png">نمودار تلرانس ناهمراستایی</a>
+<head>
+<title>مدل آموزشی همراستاسازی محورها</title>
+<meta name="author" content="Reza">
+<meta name="date" content="2011-01-06T17:31:50+0330">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+</head>
+<body style="direction:rtl;">
+<div align="center"><font size="+3" color="green">مدل آموزشی همراستاسازی محورها</font></div>
+<div align="right">این مدل به عنوان یک ابزار کمک آموزشی جهت تمرین عملیات همراستا سازی محورهای دو دستگاه دوار طراحی شده است. سعی بر این بوده تا حد امکان مدل به واقعیت نزدیک باشد و جهت رسیدن به این هدف از ابزار شبیه سازی واقعیت مجازی <a href="http://en.wikipedia.org/wiki/VRML">Virtual Reality Modeling Language</a> ‎   استفاده شده است. با استفاده از این زبان تهیه یک مدل سه بعدی و اجرای آن در فضای مجازی اینترنت ممکن میگردد. 
+در این مرحله، مدل طراحی شده امکان شبیه سازی فرآیند هم راستاسازی دو محور را به روش معکوس و با استفاده از دو ساعت اندیکاتور Reverse Indicator Method دارا میباشد.‎
+جهت اجرای مدل لطفا مراحل زیر را دنبال نمایید:
+<ul>
+	<dt>۱- در قدم اول نرم افزار نمایش دهنده بر روی مرورگر نصب نمایید، این نرم افزار پس از نصب بصورت خودکار امکان نمایش مدلها را در محیط اینترنت فراهم می آورد نرم افزار را میتوانید از لینک زیر دریافت نمایید.</dt>
+	<dd><a href="/Cortona3d.msi">Download Cortona3d VRML Viewer From LAN</a></dd>
+	<dd><a href="http://www.cortona3d.com/cortona3d/media/downloads/Viewer/Cortona3d.msi">Download Cortona3d VRML Viewer From Internet</a></dd>
+	<dd>در هنگام نصب گزینه های مربوط به Microsoft Internet Explorer را انتخاب نمایید.</dd> 
+	<br /><br />
+<form action="/cgi-bin/foobar_cpp" method="get" target="_blank">
+<dt>۲-دقت ساعت اندازگیری را تنظیم نمایید:
+<dd><input type="radio" name="ClockScale" value="1.0" checked=true/>ده میلیمتر<br />
+<dd><input type="radio" name="ClockScale" value="10.0" />میلیمتر<br />
+<dd><input type="radio" name="ClockScale" value="100.0" />دهم میلیمتر<br />
+</dt>
+	<br />
+	<dt>۳-روش حل را انتخاب نمایید.</dt>
+<dd><input type="radio" name="SolveMethod" value="0" checked=true/>روش Reverse<br />
+<dd><input type="radio" name="SolveMethod" value="3" />روش Face And Rim<br />
+<dd><input type="radio" name="SolveMethod" value="1" />روش Double Radial<br />
+<dd><input type="radio" name="SolveMethod" value="2" />روش Shaft to Coupling Spool<br />
+	<br />
+	<dt>
+	۴-با ارجاع به آدرس زیر از بین مدلهای تعریف شده در سه بخش مختلف یک مساله را انتخاب نمایید.
+		در مدلهای بخش اول امکان جابجایی (افقی و عمودی) هر دو تجهیز بدون اعمال محدودیت فراهم میباشد، بعلاوه ساعت اندیکاتور چرخش کامل ۳۶۰ درجه دارد. مسایل بخش دوم شامل محدودیت در جابجایی میباشند و	در بخش سوم ترکیبی از محدودیت های متفاوت، در جابجایی و نحوه اندازگیری لحاظ شده است.
+
+<dd><font size="+1" color="green">بخش اول:</font>
+<br />
+<dd><input type="radio" name="P_Cat" value="0" checked=true/>مدل ۱: ناهمراستایی افقی موازی<br />
+<dd><input type="radio" name="P_Cat" value="1" />مدل ۲: ناهمراستایی زاویه ای<br />
+<dd></dd><input type="radio" name="P_Cat" value="2" />مدل ۳: ناهمراستایی مرکب<br />
+<dd><font size="+1" color="green">بخش دوم، در این قسمت هر دو تجهیز قابل جابجایی هستند، ساعت اندازه گیری چرخش کامل دارد، به محدودیت در شیم برداری و لقی افقی تعریف شده در جداول توجه نمایید:</font>
+<br />
+<dd><input type="radio" name="P_Cat" value="3" />مساله ۱
+<br />
+<dd><input type="radio" name="P_Cat" value="4" />مساله ۲
+<br />
+<dd><input type="radio" name="P_Cat" value="5" />مساله ۳
+<br />
+<dd><font size="+1" color="green">بخش سوم، در این قسمت تنها محرک قابل جابجا کردن است و ساعت اندازه گیری از ۰ تا ۱۸۰+ دوران میکند:</font>
+<br />
+<dd><input type="radio" name="P_Cat" value="6" />مساله ۱
+<br />
+<dd><input type="radio" name="P_Cat" value="7" />مساله ۲
+<br />
+<dd><input type="radio" name="P_Cat" value="8" />مساله ۳
+<br /><br />
+<INPUT name="resttables" TYPE="submit" VALUE="جداول قیود">  
+<INPUT name="P_Cat_Submit" TYPE="submit" VALUE="نمایش مدل">
+</dt><br /><br />
+	<dt>۵-قبل از اجرا، برای رسیدن به حداکثر شفافیت در زمان اجرا از Preferences گزینه های مربوط به Anti-Aliasing  را علامت بزنید.</dt><br />
+	<dt>۶-جهت چرخاندن محور تجهیز کافی از روی مدل کلیک نمایید همچنین جهت تغییر زاویه دید یا تنظیم فاصله توسط نرم افزار نمایش دهنده از ابزار مناسب استفاده نمایید.</dt><br />
+	<dt>۷-پس از اتمام اندازه گیری محاسبات لازم را انجام داده و نتایج را در فرم زیر وارد نمایید.
+<p>
+<dd><font size="+1" color="green">جابجایی پایه ها را تعیین نمایید:</font><br />
+<dd><font color="red">(مقدار جابجایی برحسب میلیمتر و عددی بین ۱۰۰- و ۱۰۰+ میباشد.)</font>
+
+<table><tr><td><dd>
+محرک (Driver)-تکیه گاه عقب-جابجایی قائم	
+</td><td><input type="text" name="mov_rvr" value="0.0" size="8" maxlength="8">
+</td></tr><tr><td><dd>
+محرک (Driver)-تکیه گاه عقب-جابجایی افقی	
+</td><td><input type="text" name="mov_rhr" value="0.0" size="8" maxlength="8">
+</td></tr><tr><td><dd>
+محرک (Driver)-تکیه گاه جلو-جابجایی قائم	
+</td><td><input type="text" name="mov_rvf" value="0.0" size="8" maxlength="8">
+</td></tr><tr><td><dd>
+محرک (Driver)-تکیه گاه جلو-جابجایی افقی	
+</td><td><input type="text" name="mov_rhf" value="0.0" size="8" maxlength="8">
+</td></tr><tr><td><dd>
+متحرک (Driven)-تکیه گاه عقب-جابجایی قائم
+</td><td><input type="text" name="mov_nvr" value="0.0" size="8" maxlength="8">(در بخش سوم تنها ۰.۰ قابل قبول است)
+</td></tr><tr><td><dd>
+متحرک (Driven)-تکیه گاه عقب-جابجایی افقی
+</td><td><input type="text" name="mov_nhr" value="0.0" size="8" maxlength="8">(در بخش سوم تنها ۰.۰ قابل قبول است)
+</td></tr><tr><td><dd>
+متحرک (Driven)-تکیه گاه جلو-جابجایی قائم
+</td><td><input type="text" name="mov_nvf" value="0.0" size="8" maxlength="8">(در بخش سوم تنها ۰.۰ قابل قبول است)
+</td></tr><tr><td><dd>
+متحرک (Driven)- تکیه گاه جلو - جابجایی افقی 
+</td><td><input type="text" name="mov_nhf" value="0.0" size="8" maxlength="8">(در بخش سوم تنها ۰.۰ قابل قبول است)
+</td></tr>
+</table>
+<dd>
+<INPUT name="mov_Submit" TYPE="submit" VALUE="اعمال تغییرات و نمایش دوباره مدل">
+<INPUT name="calcresults_Submit" TYPE="submit" VALUE="نمایش پاسخهای محاسبه شده">
+</p>
+</dt>
+	<dt>۸- با اشاره به دکمه زیر میتوانید گراف وضعیت محورها را مشاهده نمایید.
+<dd><INPUT name="generateimage" TYPE="submit" VALUE="   نمایش گراف">
+</form>
+</ul></div>
+با تشکر از متخصصان محترم، جهت ارائه پیشنهادات سازنده خویش، خواهشمند است با صندوق الکترونیکی اینجانب به آدرس RAfzalan@gmail.com مکاتبه نمایید.
+</body>
+</html>

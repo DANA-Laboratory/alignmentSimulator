@@ -1,0 +1,697 @@
+main.o: /home/reza/foobar-cpp/src/main.cc \
+ /home/reza/foobar-cpp/src/doMisAlgn.h \
+ /home/reza/foobar-cpp/src/interface.h \
+ /home/reza/foobar-cpp/src/feetcorrection.h \
+ /home/reza/foobar-cpp/src/problem.h /usr/include/stdio.h \
+ /usr/include/features.h /usr/include/bits/predefs.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h \
+ /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/xlocale.h /usr/include/sys/types.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/string.h /usr/include/Inventor/SoDB.h \
+ /usr/include/Inventor/SbBasic.h /usr/include/Inventor/C/basic.h \
+ /usr/include/Inventor/system/inttypes.h /usr/include/inttypes.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/Inventor/SbString.h \
+ /usr/include/Inventor/C/base/string.h \
+ /usr/include/Inventor/lists/SbIntList.h \
+ /usr/include/Inventor/lists/SbPList.h /usr/include/assert.h \
+ /usr/include/Inventor/SbName.h /usr/include/Inventor/SoType.h \
+ /usr/include/Inventor/SbDict.h \
+ /usr/include/Inventor/sensors/SoSensorManager.h \
+ /usr/include/Inventor/SoInput.h /usr/include/Inventor/lists/SbList.h \
+ /usr/include/Inventor/SoOutput.h /usr/include/Inventor/nodes/SoNode.h \
+ /usr/include/Inventor/fields/SoFieldContainer.h \
+ /usr/include/Inventor/misc/SoBase.h \
+ /usr/include/Inventor/lists/SoAuditorList.h \
+ /usr/include/Inventor/misc/SoNotification.h \
+ /usr/include/Inventor/misc/SoNotRec.h \
+ /usr/include/Inventor/C/base/rbptree.h /usr/include/Inventor/SoLists.h \
+ /usr/include/Inventor/lists/SoBaseList.h \
+ /usr/include/Inventor/lists/SoDetailList.h \
+ /usr/include/Inventor/lists/SoEnabledElementsList.h \
+ /usr/include/Inventor/lists/SoTypeList.h \
+ /usr/include/Inventor/lists/SoEngineOutputList.h \
+ /usr/include/Inventor/lists/SoEngineList.h \
+ /usr/include/Inventor/lists/SoFieldList.h \
+ /usr/include/Inventor/lists/SoNodeList.h \
+ /usr/include/Inventor/lists/SoPathList.h \
+ /usr/include/Inventor/lists/SoPickedPointList.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLText.h \
+ /usr/include/Inventor/nodes/SoSubNode.h \
+ /usr/include/Inventor/fields/SoFieldData.h \
+ /usr/include/Inventor/C/tidbits.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLGeometry.h \
+ /usr/include/Inventor/nodes/SoShape.h /usr/include/Inventor/SbMatrix.h \
+ /usr/include/Inventor/SbVec2s.h \
+ /usr/include/Inventor/errors/SoDebugError.h \
+ /usr/include/Inventor/errors/SoError.h \
+ /usr/include/Inventor/C/errors/error.h \
+ /usr/include/Inventor/C/errors/debugerror.h \
+ /usr/include/Inventor/SbBox3f.h /usr/include/Inventor/SbVec3f.h \
+ /usr/include/Inventor/fields/SoMFString.h \
+ /usr/include/Inventor/fields/SoMField.h \
+ /usr/include/Inventor/fields/SoField.h \
+ /usr/include/Inventor/fields/SoSField.h \
+ /usr/include/Inventor/fields/SoSubField.h \
+ /usr/include/Inventor/fields/SoSFNode.h \
+ /usr/include/Inventor/fields/SoSFFloat.h \
+ /usr/include/Inventor/fields/SoMFFloat.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLBox.h \
+ /usr/include/Inventor/fields/SoSFVec3f.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLCylinder.h \
+ /usr/include/Inventor/fields/SoSFBool.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLTransform.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLGroup.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLParent.h \
+ /usr/include/Inventor/nodes/SoGroup.h \
+ /usr/include/Inventor/fields/SoMFNode.h \
+ /usr/include/Inventor/fields/SoSFEnum.h \
+ /usr/include/Inventor/fields/SoSFRotation.h \
+ /usr/include/Inventor/SbRotation.h /usr/include/Inventor/SbVec4f.h \
+ /usr/include/Inventor/actions/SoWriteAction.h \
+ /usr/include/Inventor/actions/SoAction.h \
+ /usr/include/Inventor/misc/SoTempPath.h \
+ /usr/include/Inventor/SoFullPath.h /usr/include/Inventor/SoPath.h \
+ /usr/include/Inventor/misc/SoLightPath.h \
+ /usr/include/Inventor/tools/SbPimplPtr.h \
+ /usr/include/Inventor/lists/SoActionMethodList.h \
+ /usr/include/Inventor/actions/SoSubAction.h \
+ /usr/include/Inventor/tools/SbLazyPimplPtr.h \
+ /usr/include/Inventor/actions/SoToVRML2Action.h \
+ /usr/include/Inventor/actions/SoToVRMLAction.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLTimeSensor.h \
+ /usr/include/Inventor/engines/SoNodeEngine.h \
+ /usr/include/Inventor/engines/SoSubNodeEngine.h \
+ /usr/include/Inventor/engines/SoSubEngine.h \
+ /usr/include/Inventor/engines/SoEngine.h \
+ /usr/include/Inventor/engines/SoEngineOutput.h \
+ /usr/include/Inventor/engines/SoOutputData.h \
+ /usr/include/Inventor/fields/SoSFTime.h /usr/include/Inventor/SbTime.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLPositionInterpolator.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLInterpolator.h \
+ /usr/include/Inventor/fields/SoMFVec3f.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLOrientationInterpolator.h \
+ /usr/include/Inventor/fields/SoMFRotation.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLSphere.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLShape.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLMaterial.h \
+ /usr/include/Inventor/fields/SoSFColor.h /usr/include/Inventor/SbColor.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLAppearance.h \
+ /usr/include/Inventor/VRMLnodes/SoVRMLExtrusion.h \
+ /usr/include/Inventor/fields/SoMFVec2f.h /usr/include/Inventor/SbVec2f.h \
+ /usr/include/c++/4.4/sstream /usr/include/c++/4.4/istream \
+ /usr/include/c++/4.4/ios /usr/include/c++/4.4/iosfwd \
+ /usr/include/c++/4.4/i486-linux-gnu/bits/c++config.h \
+ /usr/include/c++/4.4/i486-linux-gnu/bits/os_defines.h \
+ /usr/include/c++/4.4/i486-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/4.4/bits/stringfwd.h \
+ /usr/include/c++/4.4/bits/postypes.h /usr/include/c++/4.4/cwchar \
+ /usr/include/c++/4.4/cstddef /usr/include/c++/4.4/exception \
+ /usr/include/c++/4.4/bits/char_traits.h \
+ /usr/include/c++/4.4/bits/stl_algobase.h \
+ /usr/include/c++/4.4/bits/functexcept.h \
+ /usr/include/c++/4.4/exception_defines.h \
+ /usr/include/c++/4.4/bits/cpp_type_traits.h \
+ /usr/include/c++/4.4/ext/type_traits.h \
+ /usr/include/c++/4.4/ext/numeric_traits.h \
+ /usr/include/c++/4.4/bits/stl_pair.h /usr/include/c++/4.4/bits/move.h \
+ /usr/include/c++/4.4/bits/concept_check.h \
+ /usr/include/c++/4.4/bits/stl_iterator_base_types.h \
+ /usr/include/c++/4.4/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/4.4/bits/stl_iterator.h \
+ /usr/include/c++/4.4/debug/debug.h /usr/include/c++/4.4/bits/localefwd.h \
+ /usr/include/c++/4.4/i486-linux-gnu/bits/c++locale.h \
+ /usr/include/c++/4.4/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/4.4/cctype \
+ /usr/include/ctype.h /usr/include/c++/4.4/bits/ios_base.h \
+ /usr/include/c++/4.4/ext/atomicity.h \
+ /usr/include/c++/4.4/i486-linux-gnu/bits/gthr.h \
+ /usr/include/c++/4.4/i486-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+ /usr/include/signal.h /usr/include/bits/setjmp.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/getopt.h \
+ /usr/include/c++/4.4/i486-linux-gnu/bits/atomic_word.h \
+ /usr/include/c++/4.4/bits/locale_classes.h /usr/include/c++/4.4/string \
+ /usr/include/c++/4.4/bits/allocator.h \
+ /usr/include/c++/4.4/i486-linux-gnu/bits/c++allocator.h \
+ /usr/include/c++/4.4/ext/new_allocator.h /usr/include/c++/4.4/new \
+ /usr/include/c++/4.4/bits/ostream_insert.h \
+ /usr/include/c++/4.4/cxxabi-forced.h \
+ /usr/include/c++/4.4/bits/stl_function.h \
+ /usr/include/c++/4.4/backward/binders.h \
+ /usr/include/c++/4.4/bits/basic_string.h \
+ /usr/include/c++/4.4/initializer_list \
+ /usr/include/c++/4.4/bits/basic_string.tcc \
+ /usr/include/c++/4.4/bits/locale_classes.tcc \
+ /usr/include/c++/4.4/streambuf /usr/include/c++/4.4/bits/streambuf.tcc \
+ /usr/include/c++/4.4/bits/basic_ios.h \
+ /usr/include/c++/4.4/bits/locale_facets.h /usr/include/c++/4.4/cwctype \
+ /usr/include/wctype.h \
+ /usr/include/c++/4.4/i486-linux-gnu/bits/ctype_base.h \
+ /usr/include/c++/4.4/bits/streambuf_iterator.h \
+ /usr/include/c++/4.4/i486-linux-gnu/bits/ctype_inline.h \
+ /usr/include/c++/4.4/bits/locale_facets.tcc \
+ /usr/include/c++/4.4/bits/basic_ios.tcc /usr/include/c++/4.4/ostream \
+ /usr/include/c++/4.4/bits/ostream.tcc \
+ /usr/include/c++/4.4/bits/istream.tcc \
+ /usr/include/c++/4.4/bits/sstream.tcc \
+ /home/reza/foobar-cpp/src/staticConst.h \
+ /home/reza/foobar-cpp/src/LinePlaneInter.cc \
+ /usr/include/Inventor/SbLinear.h /usr/include/Inventor/SbVec3s.h \
+ /usr/include/Inventor/SbSphere.h /usr/include/Inventor/SbLine.h \
+ /usr/include/Inventor/SbCylinder.h /usr/include/Inventor/SbPlane.h \
+ /usr/include/Inventor/SbViewVolume.h \
+ /usr/include/Inventor/SbDPViewVolume.h /usr/include/Inventor/SbVec3d.h \
+ /home/reza/foobar-cpp/src/Cgicpphelper.h /usr/include/c++/4.4/iostream \
+ /usr/include/c++/4.4/vector /usr/include/c++/4.4/bits/stl_construct.h \
+ /usr/include/c++/4.4/bits/stl_uninitialized.h \
+ /usr/include/c++/4.4/bits/stl_vector.h \
+ /usr/include/c++/4.4/bits/stl_bvector.h \
+ /usr/include/c++/4.4/bits/vector.tcc /usr/include/c++/4.4/fstream \
+ /usr/include/c++/4.4/bits/codecvt.h /usr/include/c++/4.4/cstdio \
+ /usr/include/c++/4.4/i486-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/4.4/i486-linux-gnu/bits/c++io.h \
+ /usr/include/c++/4.4/bits/fstream.tcc
+
+/home/reza/foobar-cpp/src/doMisAlgn.h:
+
+/home/reza/foobar-cpp/src/interface.h:
+
+/home/reza/foobar-cpp/src/feetcorrection.h:
+
+/home/reza/foobar-cpp/src/problem.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/predefs.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/lib/gcc/i486-linux-gnu/4.4.3/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/string.h:
+
+/usr/include/Inventor/SoDB.h:
+
+/usr/include/Inventor/SbBasic.h:
+
+/usr/include/Inventor/C/basic.h:
+
+/usr/include/Inventor/system/inttypes.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/Inventor/SbString.h:
+
+/usr/include/Inventor/C/base/string.h:
+
+/usr/include/Inventor/lists/SbIntList.h:
+
+/usr/include/Inventor/lists/SbPList.h:
+
+/usr/include/assert.h:
+
+/usr/include/Inventor/SbName.h:
+
+/usr/include/Inventor/SoType.h:
+
+/usr/include/Inventor/SbDict.h:
+
+/usr/include/Inventor/sensors/SoSensorManager.h:
+
+/usr/include/Inventor/SoInput.h:
+
+/usr/include/Inventor/lists/SbList.h:
+
+/usr/include/Inventor/SoOutput.h:
+
+/usr/include/Inventor/nodes/SoNode.h:
+
+/usr/include/Inventor/fields/SoFieldContainer.h:
+
+/usr/include/Inventor/misc/SoBase.h:
+
+/usr/include/Inventor/lists/SoAuditorList.h:
+
+/usr/include/Inventor/misc/SoNotification.h:
+
+/usr/include/Inventor/misc/SoNotRec.h:
+
+/usr/include/Inventor/C/base/rbptree.h:
+
+/usr/include/Inventor/SoLists.h:
+
+/usr/include/Inventor/lists/SoBaseList.h:
+
+/usr/include/Inventor/lists/SoDetailList.h:
+
+/usr/include/Inventor/lists/SoEnabledElementsList.h:
+
+/usr/include/Inventor/lists/SoTypeList.h:
+
+/usr/include/Inventor/lists/SoEngineOutputList.h:
+
+/usr/include/Inventor/lists/SoEngineList.h:
+
+/usr/include/Inventor/lists/SoFieldList.h:
+
+/usr/include/Inventor/lists/SoNodeList.h:
+
+/usr/include/Inventor/lists/SoPathList.h:
+
+/usr/include/Inventor/lists/SoPickedPointList.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLText.h:
+
+/usr/include/Inventor/nodes/SoSubNode.h:
+
+/usr/include/Inventor/fields/SoFieldData.h:
+
+/usr/include/Inventor/C/tidbits.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLGeometry.h:
+
+/usr/include/Inventor/nodes/SoShape.h:
+
+/usr/include/Inventor/SbMatrix.h:
+
+/usr/include/Inventor/SbVec2s.h:
+
+/usr/include/Inventor/errors/SoDebugError.h:
+
+/usr/include/Inventor/errors/SoError.h:
+
+/usr/include/Inventor/C/errors/error.h:
+
+/usr/include/Inventor/C/errors/debugerror.h:
+
+/usr/include/Inventor/SbBox3f.h:
+
+/usr/include/Inventor/SbVec3f.h:
+
+/usr/include/Inventor/fields/SoMFString.h:
+
+/usr/include/Inventor/fields/SoMField.h:
+
+/usr/include/Inventor/fields/SoField.h:
+
+/usr/include/Inventor/fields/SoSField.h:
+
+/usr/include/Inventor/fields/SoSubField.h:
+
+/usr/include/Inventor/fields/SoSFNode.h:
+
+/usr/include/Inventor/fields/SoSFFloat.h:
+
+/usr/include/Inventor/fields/SoMFFloat.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLBox.h:
+
+/usr/include/Inventor/fields/SoSFVec3f.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLCylinder.h:
+
+/usr/include/Inventor/fields/SoSFBool.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLTransform.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLGroup.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLParent.h:
+
+/usr/include/Inventor/nodes/SoGroup.h:
+
+/usr/include/Inventor/fields/SoMFNode.h:
+
+/usr/include/Inventor/fields/SoSFEnum.h:
+
+/usr/include/Inventor/fields/SoSFRotation.h:
+
+/usr/include/Inventor/SbRotation.h:
+
+/usr/include/Inventor/SbVec4f.h:
+
+/usr/include/Inventor/actions/SoWriteAction.h:
+
+/usr/include/Inventor/actions/SoAction.h:
+
+/usr/include/Inventor/misc/SoTempPath.h:
+
+/usr/include/Inventor/SoFullPath.h:
+
+/usr/include/Inventor/SoPath.h:
+
+/usr/include/Inventor/misc/SoLightPath.h:
+
+/usr/include/Inventor/tools/SbPimplPtr.h:
+
+/usr/include/Inventor/lists/SoActionMethodList.h:
+
+/usr/include/Inventor/actions/SoSubAction.h:
+
+/usr/include/Inventor/tools/SbLazyPimplPtr.h:
+
+/usr/include/Inventor/actions/SoToVRML2Action.h:
+
+/usr/include/Inventor/actions/SoToVRMLAction.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLTimeSensor.h:
+
+/usr/include/Inventor/engines/SoNodeEngine.h:
+
+/usr/include/Inventor/engines/SoSubNodeEngine.h:
+
+/usr/include/Inventor/engines/SoSubEngine.h:
+
+/usr/include/Inventor/engines/SoEngine.h:
+
+/usr/include/Inventor/engines/SoEngineOutput.h:
+
+/usr/include/Inventor/engines/SoOutputData.h:
+
+/usr/include/Inventor/fields/SoSFTime.h:
+
+/usr/include/Inventor/SbTime.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLPositionInterpolator.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLInterpolator.h:
+
+/usr/include/Inventor/fields/SoMFVec3f.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLOrientationInterpolator.h:
+
+/usr/include/Inventor/fields/SoMFRotation.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLSphere.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLShape.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLMaterial.h:
+
+/usr/include/Inventor/fields/SoSFColor.h:
+
+/usr/include/Inventor/SbColor.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLAppearance.h:
+
+/usr/include/Inventor/VRMLnodes/SoVRMLExtrusion.h:
+
+/usr/include/Inventor/fields/SoMFVec2f.h:
+
+/usr/include/Inventor/SbVec2f.h:
+
+/usr/include/c++/4.4/sstream:
+
+/usr/include/c++/4.4/istream:
+
+/usr/include/c++/4.4/ios:
+
+/usr/include/c++/4.4/iosfwd:
+
+/usr/include/c++/4.4/i486-linux-gnu/bits/c++config.h:
+
+/usr/include/c++/4.4/i486-linux-gnu/bits/os_defines.h:
+
+/usr/include/c++/4.4/i486-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/4.4/bits/stringfwd.h:
+
+/usr/include/c++/4.4/bits/postypes.h:
+
+/usr/include/c++/4.4/cwchar:
+
+/usr/include/c++/4.4/cstddef:
+
+/usr/include/c++/4.4/exception:
+
+/usr/include/c++/4.4/bits/char_traits.h:
+
+/usr/include/c++/4.4/bits/stl_algobase.h:
+
+/usr/include/c++/4.4/bits/functexcept.h:
+
+/usr/include/c++/4.4/exception_defines.h:
+
+/usr/include/c++/4.4/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.4/ext/type_traits.h:
+
+/usr/include/c++/4.4/ext/numeric_traits.h:
+
+/usr/include/c++/4.4/bits/stl_pair.h:
+
+/usr/include/c++/4.4/bits/move.h:
+
+/usr/include/c++/4.4/bits/concept_check.h:
+
+/usr/include/c++/4.4/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/4.4/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/4.4/bits/stl_iterator.h:
+
+/usr/include/c++/4.4/debug/debug.h:
+
+/usr/include/c++/4.4/bits/localefwd.h:
+
+/usr/include/c++/4.4/i486-linux-gnu/bits/c++locale.h:
+
+/usr/include/c++/4.4/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/c++/4.4/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/4.4/bits/ios_base.h:
+
+/usr/include/c++/4.4/ext/atomicity.h:
+
+/usr/include/c++/4.4/i486-linux-gnu/bits/gthr.h:
+
+/usr/include/c++/4.4/i486-linux-gnu/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/c++/4.4/i486-linux-gnu/bits/atomic_word.h:
+
+/usr/include/c++/4.4/bits/locale_classes.h:
+
+/usr/include/c++/4.4/string:
+
+/usr/include/c++/4.4/bits/allocator.h:
+
+/usr/include/c++/4.4/i486-linux-gnu/bits/c++allocator.h:
+
+/usr/include/c++/4.4/ext/new_allocator.h:
+
+/usr/include/c++/4.4/new:
+
+/usr/include/c++/4.4/bits/ostream_insert.h:
+
+/usr/include/c++/4.4/cxxabi-forced.h:
+
+/usr/include/c++/4.4/bits/stl_function.h:
+
+/usr/include/c++/4.4/backward/binders.h:
+
+/usr/include/c++/4.4/bits/basic_string.h:
+
+/usr/include/c++/4.4/initializer_list:
+
+/usr/include/c++/4.4/bits/basic_string.tcc:
+
+/usr/include/c++/4.4/bits/locale_classes.tcc:
+
+/usr/include/c++/4.4/streambuf:
+
+/usr/include/c++/4.4/bits/streambuf.tcc:
+
+/usr/include/c++/4.4/bits/basic_ios.h:
+
+/usr/include/c++/4.4/bits/locale_facets.h:
+
+/usr/include/c++/4.4/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/4.4/i486-linux-gnu/bits/ctype_base.h:
+
+/usr/include/c++/4.4/bits/streambuf_iterator.h:
+
+/usr/include/c++/4.4/i486-linux-gnu/bits/ctype_inline.h:
+
+/usr/include/c++/4.4/bits/locale_facets.tcc:
+
+/usr/include/c++/4.4/bits/basic_ios.tcc:
+
+/usr/include/c++/4.4/ostream:
+
+/usr/include/c++/4.4/bits/ostream.tcc:
+
+/usr/include/c++/4.4/bits/istream.tcc:
+
+/usr/include/c++/4.4/bits/sstream.tcc:
+
+/home/reza/foobar-cpp/src/staticConst.h:
+
+/home/reza/foobar-cpp/src/LinePlaneInter.cc:
+
+/usr/include/Inventor/SbLinear.h:
+
+/usr/include/Inventor/SbVec3s.h:
+
+/usr/include/Inventor/SbSphere.h:
+
+/usr/include/Inventor/SbLine.h:
+
+/usr/include/Inventor/SbCylinder.h:
+
+/usr/include/Inventor/SbPlane.h:
+
+/usr/include/Inventor/SbViewVolume.h:
+
+/usr/include/Inventor/SbDPViewVolume.h:
+
+/usr/include/Inventor/SbVec3d.h:
+
+/home/reza/foobar-cpp/src/Cgicpphelper.h:
+
+/usr/include/c++/4.4/iostream:
+
+/usr/include/c++/4.4/vector:
+
+/usr/include/c++/4.4/bits/stl_construct.h:
+
+/usr/include/c++/4.4/bits/stl_uninitialized.h:
+
+/usr/include/c++/4.4/bits/stl_vector.h:
+
+/usr/include/c++/4.4/bits/stl_bvector.h:
+
+/usr/include/c++/4.4/bits/vector.tcc:
+
+/usr/include/c++/4.4/fstream:
+
+/usr/include/c++/4.4/bits/codecvt.h:
+
+/usr/include/c++/4.4/cstdio:
+
+/usr/include/c++/4.4/i486-linux-gnu/bits/basic_file.h:
+
+/usr/include/c++/4.4/i486-linux-gnu/bits/c++io.h:
+
+/usr/include/c++/4.4/bits/fstream.tcc:

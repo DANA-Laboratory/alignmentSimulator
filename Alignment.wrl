@@ -1,0 +1,1430 @@
+#VRML V2.0 utf8
+
+#VRML V2.0 utf8
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+Transform 
+  {
+  children 
+    [
+    Shape 
+      {
+      appearance       Appearance 
+	{
+	material 	Material 
+	  {
+	  diffuseColor 0 0.500000 0.500000
+	  }
+	}
+      geometry       ElevationGrid 
+	{
+	height 
+	  [
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  -1 
+	  -1 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  -1 
+	  -1 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  -1 
+	  -1 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  -1 
+	  -1 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  -1 
+	  -1 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  0 
+	  ]
+	solid FALSE
+	xDimension 14
+	xSpacing 1.200000
+	zDimension 5
+	zSpacing 3
+	}
+      }
+    ]
+  translation -5.500000 -0.250000 -6
+  }
+
+PointLight 
+  {
+  color 0.973182 1 0.379310
+  location 2 -5 -5
+  }
+
+PointLight 
+  {
+  color 1 0.311545 0.448962
+  location -2 5 5
+  }
+
+DEF DDriver Transform 
+  {
+  children 
+    [
+    DEF Driver Transform 
+      {
+      children 
+	[
+	DEF DriverShaft Transform 
+	  {
+	  children 
+	    [
+	    DEF DriverShaftShape Shape 
+	      {
+	      appearance 	      DEF DriverShaftApp Appearance 
+		{
+		material 		DEF DriverShaftMat Material 
+		  {
+		  diffuseColor 0.400000 0.100000 0.100000
+		  }
+		}
+	      geometry 	      DEF DriverShaftCy Cylinder 
+		{
+		}
+	      }
+	    DEF DriverClockClamp Transform 
+	      {
+	      children 
+		[
+		DEF hclamp Transform 
+		  {
+		  children 
+		    [
+		    Shape 
+		      {
+		      appearance 		      Appearance 
+			{
+			material 			Material 
+			  {
+			  diffuseColor 0.300000 0.300000 0.300000
+			  }
+			}
+		      geometry 		      DEF hclampBox Box 
+			{
+			}
+		      }
+		    ]
+		  }
+		DEF vclamp Transform 
+		  {
+		  children 
+		    [
+		    Shape 
+		      {
+		      appearance 		      Appearance 
+			{
+			material 			Material 
+			  {
+			  diffuseColor 0.300000 0.300000 0.300000
+			  }
+			}
+		      geometry 		      DEF vclampBox Box 
+			{
+			}
+		      }
+		    ]
+		  }
+		DEF clock Transform 
+		  {
+		  children 
+		    [
+		    DEF N0 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "00"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF N10 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "90"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF N20 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "80"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF N30 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "70"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF N40 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "60"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF N50 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "50"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF N60 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "40"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF N70 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "30"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF N80 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "20"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF N90 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "10"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF circle Transform 
+		      {
+		      children 
+			[
+			DEF cirShape Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      }
+			    }
+			  geometry 			  DEF cirCy Cylinder 
+			    {
+			    }
+			  }
+			DEF idicator Transform 
+			  {
+			  children 
+			    [
+			    Shape 
+			      {
+			      appearance 			      Appearance 
+				{
+				material 				Material 
+				  {
+				  diffuseColor 0.500000 0.500000 0
+				  }
+				}
+			      geometry 			      DEF indicatorCy Box 
+				{
+				}
+			      }
+			    ]
+			  }
+			]
+		      }
+		    DEF iDic Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 0 0.500000 0.500000
+			      }
+			    }
+			  geometry 			  DEF iDicCy Box 
+			    {
+			    }
+			  }
+			]
+		      }
+		    ]
+		  }
+		]
+	      }
+	    ]
+	  }
+	DEF DriverEq Transform 
+	  {
+	  children 
+	    [
+	    DEF DriverEqShape Shape 
+	      {
+	      appearance 	      DEF DriverEqApp Appearance 
+		{
+		material 		DEF DriverEqMat Material 
+		  {
+		  diffuseColor 0.400000 0.100000 0.100000
+		  }
+		}
+	      geometry 	      DEF DriverEqBox Extrusion 
+		{
+		}
+	      }
+	    Shape 
+	      {
+	      appearance 	      DEF DriverEqApp_0 Appearance 
+		{
+		material 		DEF DriverEqMat_0 Material 
+		  {
+		  diffuseColor 0.400000 0.100000 0.100000
+		  }
+		}
+	      geometry 	      DEF DriverEqPay Extrusion 
+		{
+		}
+	      }
+	    Transform 
+	      {
+	      children 
+		[
+		Shape 
+		  {
+		  appearance 		  Appearance 
+		    {
+		    material 		    Material 
+		      {
+		      }
+		    }
+		  geometry 		  DEF DriverParameters Text 
+		    {
+		    string 
+		      [
+		      "Driver Parameters (meter)"
+		      "1-Length="
+		      "2-Height="
+		      "3-Width="
+		      "4-Shaft Length="
+		      "5-Shaft Diameter="
+		      "6-Clock Position On Shaft="
+		      "7-Clamp Height="
+		      "8-Clamp Length="
+		      "9-Shafts End Gap="
+		      ]
+		    }
+		  }
+		]
+	      scale 0.200000 0.200000 0.200000
+	      translation 0 4 0
+	      }
+	    ]
+	  }
+	]
+      }
+    ]
+  }
+
+DEF DriverFR Transform 
+  {
+  children 
+    [
+    DEF DriverFRShape Shape 
+      {
+      appearance       DEF DriverFRApp Appearance 
+	{
+	material 	DEF DriverFRMat Material 
+	  {
+	  }
+	}
+      geometry       DEF DriverFRCy Cylinder 
+	{
+	}
+      }
+    ]
+  }
+
+DEF DriverFL Transform 
+  {
+  children 
+    [
+    DEF DriverFLShape Shape 
+      {
+      appearance       DEF DriverFLApp Appearance 
+	{
+	material 	DEF DriverFLMat Material 
+	  {
+	  }
+	}
+      geometry       DEF DriverFLCy Cylinder 
+	{
+	}
+      }
+    ]
+  }
+
+DEF DriverRR Transform 
+  {
+  children 
+    [
+    DEF DriverRRShape Shape 
+      {
+      appearance       DEF DriverRRApp Appearance 
+	{
+	material 	DEF DriverRRMat Material 
+	  {
+	  }
+	}
+      geometry       DEF DriverRRCy Cylinder 
+	{
+	}
+      }
+    ]
+  }
+
+DEF DriverRL Transform 
+  {
+  children 
+    [
+    DEF DriverRLShape Shape 
+      {
+      appearance       DEF DriverRLApp Appearance 
+	{
+	material 	DEF DriverRLMat Material 
+	  {
+	  }
+	}
+      geometry       DEF DriverRLCy Cylinder 
+	{
+	}
+      }
+    ]
+  }
+
+DEF DDriven Transform 
+  {
+  children 
+    [
+    DEF Driven Transform 
+      {
+      children 
+	[
+	DEF DrivenShaft Transform 
+	  {
+	  children 
+	    [
+	    DEF DrivenShaftShape Shape 
+	      {
+	      appearance 	      DEF DrivenShaftApp Appearance 
+		{
+		material 		DEF DrivenShaftMat Material 
+		  {
+		  diffuseColor 0.100000 0.100000 0.400000
+		  }
+		}
+	      geometry 	      DEF DrivenShaftCy Cylinder 
+		{
+		}
+	      }
+	    DEF DrivenClockClamp Transform 
+	      {
+	      children 
+		[
+		DEF Drivenclock Transform 
+		  {
+		  children 
+		    [
+		    DEF DrivenN0 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "00"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF DrivenN10 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "90"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF DrivenN20 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "80"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF DrivenN30 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "70"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF DrivenN40 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "60"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF DrivenN50 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "50"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF DrivenN60 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "40"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF DrivenN70 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "30"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF DrivenN80 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "20"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF DrivenN90 Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 1 0 0
+			      }
+			    }
+			  geometry 			  Text 
+			    {
+			    string 
+			      [
+			      "10"
+			      ]
+			    }
+			  }
+			]
+		      }
+		    DEF Drivencircle Transform 
+		      {
+		      children 
+			[
+			DEF DrivencirShape Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      }
+			    }
+			  geometry 			  DEF DrivencirCy Cylinder 
+			    {
+			    }
+			  }
+			DEF Drivenidicator Transform 
+			  {
+			  children 
+			    [
+			    Shape 
+			      {
+			      appearance 			      Appearance 
+				{
+				material 				Material 
+				  {
+				  diffuseColor 0.500000 0.500000 0
+				  }
+				}
+			      geometry 			      DEF DrivenindicatorCy Box 
+				{
+				}
+			      }
+			    ]
+			  }
+			]
+		      }
+		    DEF DriveniDic Transform 
+		      {
+		      children 
+			[
+			Shape 
+			  {
+			  appearance 			  Appearance 
+			    {
+			    material 			    Material 
+			      {
+			      diffuseColor 0 0.500000 0.500000
+			      }
+			    }
+			  geometry 			  DEF DriveniDicCy Box 
+			    {
+			    }
+			  }
+			]
+		      }
+		    ]
+		  }
+		DEF Drivenvclamp Transform 
+		  {
+		  children 
+		    [
+		    Shape 
+		      {
+		      appearance 		      Appearance 
+			{
+			material 			Material 
+			  {
+			  diffuseColor 0.300000 0.300000 0.300000
+			  }
+			}
+		      geometry 		      DEF DrivenvclampBox Box 
+			{
+			}
+		      }
+		    ]
+		  }
+		DEF Drivenhclamp Transform 
+		  {
+		  children 
+		    [
+		    Shape 
+		      {
+		      appearance 		      Appearance 
+			{
+			material 			Material 
+			  {
+			  diffuseColor 0.300000 0.300000 0.300000
+			  }
+			}
+		      geometry 		      DEF DrivenhclampBox Box 
+			{
+			}
+		      }
+		    ]
+		  }
+		]
+	      }
+	    ]
+	  }
+	DEF DrivenEq Transform 
+	  {
+	  children 
+	    [
+	    DEF DrivenEqShape Shape 
+	      {
+	      appearance 	      DEF DrivenEqApp Appearance 
+		{
+		material 		DEF DrivenEqMat Material 
+		  {
+		  diffuseColor 0.100000 0.100000 0.400000
+		  }
+		}
+	      geometry 	      DEF DrivenEqBox Extrusion 
+		{
+		}
+	      }
+	    Shape 
+	      {
+	      appearance 	      DEF DrivenEqApp_0 Appearance 
+		{
+		material 		DEF DrivenEqMat_0 Material 
+		  {
+		  diffuseColor 0.100000 0.100000 0.400000
+		  }
+		}
+	      geometry 	      DEF DrivenEqPay Extrusion 
+		{
+		}
+	      }
+	    Transform 
+	      {
+	      children 
+		[
+		Shape 
+		  {
+		  appearance 		  Appearance 
+		    {
+		    material 		    Material 
+		      {
+		      }
+		    }
+		  geometry 		  DEF DrivenParameters Text 
+		    {
+		    string 
+		      [
+		      "Driven Parameters (meter)"
+		      "1-Length="
+		      "2-Height="
+		      "3-Width="
+		      "4-Shaft Length="
+		      "5-Shaft Diameter="
+		      "6-Clock Position On Shaft="
+		      "7-Clamp Height="
+		      "8-Clamp Length="
+		      "9-Shafts End Gap="
+		      ]
+		    }
+		  }
+		]
+	      scale 0.200000 0.200000 0.200000
+	      translation 0 4 0
+	      }
+	    ]
+	  translation 0 5 0
+	  }
+	]
+      }
+    ]
+  }
+
+DEF DrivenFR Transform 
+  {
+  children 
+    [
+    DEF DrivenFRShape Shape 
+      {
+      appearance       DEF DrivenFRApp Appearance 
+	{
+	material 	DEF DrivenFRMat Material 
+	  {
+	  }
+	}
+      geometry       DEF DrivenFRCy Cylinder 
+	{
+	}
+      }
+    ]
+  }
+
+DEF DrivenFL Transform 
+  {
+  children 
+    [
+    DEF DrivenFLShape Shape 
+      {
+      appearance       DEF DrivenFLApp Appearance 
+	{
+	material 	DEF DrivenFLMat Material 
+	  {
+	  }
+	}
+      geometry       DEF DrivenFLCy Cylinder 
+	{
+	}
+      }
+    ]
+  }
+
+DEF DrivenRR Transform 
+  {
+  children 
+    [
+    DEF DrivenRRShape Shape 
+      {
+      appearance       DEF DrivenRRApp Appearance 
+	{
+	material 	DEF DrivenRRMat Material 
+	  {
+	  }
+	}
+      geometry       DEF DrivenRRCy Cylinder 
+	{
+	}
+      }
+    ]
+  }
+
+DEF DrivenRL Transform 
+  {
+  children 
+    [
+    DEF DrivenRLShape Shape 
+      {
+      appearance       DEF DrivenRLApp Appearance 
+	{
+	material 	DEF DrivenRLMat Material 
+	  {
+	  }
+	}
+      geometry       DEF DrivenRLCy Cylinder 
+	{
+	}
+      }
+    ]
+  }
+
+DEF indicatorDriven Transform 
+  {
+  children 
+    [
+    DEF indicatorDrivenShape Shape 
+      {
+      geometry       DEF indicatorDrivenCy Cylinder 
+	{
+	}
+      }
+    ]
+  }
+
+DEF indicatorDriver Transform 
+  {
+  children 
+    [
+    DEF indicatorDriverShape Shape 
+      {
+      geometry       DEF indicatorDriverCy Cylinder 
+	{
+	}
+      }
+    ]
+  }
+Billboard 
+  {
+  children 
+    [
+    DEF BilCom Transform 
+      {
+      children 
+	[
+	Shape 
+	  {
+	  appearance 	  Appearance 
+	    {
+	    material 	    Material 
+	      {
+	      diffuseColor 0.710448 0.463420 0.800000
+	      }
+	    }
+	  geometry 	  Text 
+	    {
+	    string 
+	      [
+	      "SHAFT ALIGNMENT VIRTUAL TRAINING TOOL"
+	      "BY R.AFZALAN 2010"
+	      ]
+	    }
+	  }
+	]
+      scale 0.300000 0.300000 0.300000
+      }
+    ]
+  }
+
+
+DEF nghalh Transform 
+  {
+  children 
+    [
+    Shape 
+      {
+      appearance       Appearance 
+	{
+	material 	Material 
+	  {
+	  shininess 0.800000
+	  transparency 0.800000
+	  }
+	}
+      geometry       DEF nghalh_Cy Cylinder 
+	{
+	height 2.999999e-2
+	radius 0.500000
+	}
+      }
+    DEF nghalh_BoxTr Transform 
+      {
+      children 
+	[
+	DEF TouchS TouchSensor {
+	}
+	Transform 
+	  {
+	  children 
+	    [
+	    Shape 
+	      {
+	      appearance 	      Appearance 
+		{
+		material 		Material 
+		  {
+		  }
+		}
+	      geometry 	      DEF nghalh_Box Box 
+		{
+		size 0.600000 1.999999e-2 1.999999e-2
+		}
+	      }
+	    ]
+	  translation 0.300000 0 0
+	  }
+	]
+      translation 0 -3.999999e-2 0
+      }
+    ]
+  rotation 0 0 1 1.570799
+  translation 0 2 0
+  }
+
+
+DEF timer TimeSensor 
+  {
+  cycleInterval 50
+  startTime -1
+  }
+
+
+DEF iDictranslation PositionInterpolator 
+  {
+  key 
+    [
+    0 
+    ]
+  keyValue 
+    [
+    0 0 0 
+    ]
+  }
+
+ROUTE timer.fraction_changed TO iDictranslation.set_fraction
+ROUTE iDictranslation.value_changed TO iDic.set_translation
+
+DEF DriveniDictranslation PositionInterpolator 
+  {
+  key 
+    [
+    0 
+    ]
+  keyValue 
+    [
+    0 0 0 
+    ]
+  }
+
+ROUTE timer.fraction_changed TO DriveniDictranslation.set_fraction
+ROUTE DriveniDictranslation.value_changed TO DriveniDic.set_translation
+
+DEF clockrotation OrientationInterpolator 
+  {
+  key 
+    [
+    0 
+    ]
+  keyValue 
+    [
+    0 0 1 0 
+    ]
+  }
+
+ROUTE timer.fraction_changed TO clockrotation.set_fraction
+ROUTE clockrotation.value_changed TO clock.set_rotation
+
+DEF Drivenclockrotation OrientationInterpolator 
+  {
+  key 
+    [
+    0 
+    ]
+  keyValue 
+    [
+    0 0 1 0 
+    ]
+  }
+
+ROUTE timer.fraction_changed TO Drivenclockrotation.set_fraction
+ROUTE Drivenclockrotation.value_changed TO Drivenclock.set_rotation
+
+DEF DriverClockClamprotation OrientationInterpolator 
+  {
+  key 
+    [
+    0 
+    ]
+  keyValue 
+    [
+    0 0 1 0 
+    ]
+  }
+
+ROUTE timer.fraction_changed TO DriverClockClamprotation.set_fraction
+ROUTE DriverClockClamprotation.value_changed TO DriverClockClamp.set_rotation
+
+DEF DrivenClockClamprotation OrientationInterpolator 
+  {
+  key 
+    [
+    0 
+    ]
+  keyValue 
+    [
+    0 0 1 0 
+    ]
+  }
+
+ROUTE timer.fraction_changed TO DrivenClockClamprotation.set_fraction
+ROUTE DrivenClockClamprotation.value_changed TO DrivenClockClamp.set_rotation
+
+DEF idicatorrotation OrientationInterpolator 
+  {
+  key 
+    [
+    0 
+    ]
+  keyValue 
+    [
+    0 0 1 0 
+    ]
+  }
+
+ROUTE timer.fraction_changed TO idicatorrotation.set_fraction
+ROUTE idicatorrotation.value_changed TO idicator.set_rotation
+
+DEF Drivenidicatorrotation OrientationInterpolator 
+  {
+  key 
+    [
+    0 
+    ]
+  keyValue 
+    [
+    0 0 1 0 
+    ]
+  }
+
+ROUTE timer.fraction_changed TO Drivenidicatorrotation.set_fraction
+ROUTE Drivenidicatorrotation.value_changed TO Drivenidicator.set_rotation
+
+DEF ScriptAnimationControl Script 
+  {
+  eventIn SFTime toggle
+  eventIn SFBool activated
+  eventIn SFTime cycle
+  eventOut SFTime triggerStart
+  eventOut SFTime triggerStop
+  eventOut SFTime triggerStartInt
+  directOutput TRUE
+  field SFNode tproc   USE timer
+  field SFBool state FALSE
+  field SFTime pause 0
+  url 
+    [
+    "vrmlscript:
+ function activated( active, curtime ) 
+ {
+  if( active ) {
+   triggerStart = curtime;
+   state = TRUE;
+  }
+  else {
+   triggerStop = curtime;
+   state = FALSE;
+  }
+ }
+ function cycle( curtime ) {
+  triggerStartInt = curtime;
+ }
+ function toggle( stime ) {
+  if( state )
+  {
+   state = FALSE;
+   pause = stime - tproc.startTime_changed;
+   tproc.enabled = FALSE;
+  }
+  else
+  {
+   state = TRUE;
+   tproc.set_startTime = stime - pause;
+   tproc.enabled = TRUE;
+   pause = 0;
+  }
+ }
+ "
+    ]
+  }
+
+ROUTE TouchS.touchTime TO ScriptAnimationControl.toggle
+ROUTE timer.isActive TO ScriptAnimationControl.activated
+ROUTE timer.cycleTime TO ScriptAnimationControl.cycle
+ROUTE DriverClockClamprotation.value_changed TO nghalh_BoxTr.set_rotation
+
+

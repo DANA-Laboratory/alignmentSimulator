@@ -1,0 +1,27 @@
+alg1_1="rhf=0.15&rhr=0.02&rvf=-0.11&rvr=0.02&nhf=0.15&nhr=0.02&nvf=-0.11&nvr=0.02";//pararel horizontal misalignment
+alg1_2="rhf=0.0&rhr=0.0&rvf=0.05&rvr=0.0&nhf=0.0&nhr=0.0&nvf=0.0&nvr=0.0";//angular vertical misalignment
+alg1_3="rhf=0.01&rhr=-0.002&rvf=0.01&rvr=0.01&nhf=0.03&nhr=0.01&nvf=0.02&nvr=0.01";//composite misalignment
+alg2_1="rhf=0.0&rhr=0.0&rvf=-0.1&rvr=-0.1&nhf=0.0&nhr=0.0&nvf=0.0&nvr=0.0";//pararel composite misalignment
+she2_1="RRL=5.2&RRR=1.25&RFL=2.0&RFR=2.2&NFR=0.2&NFL=0.6&NRR=0.2&NRL=4.3";
+clr2_1="RRL=[10,5]&RRR=[8,7]&RFL=[3,12]&RFR=[5,10]&NFR=[1,14]&NFL=[2,13]&NRR=[7,8]&NRL=[4,11]";
+alg2_2="rhf=0.0&rhr=0.0&rvf=0.05&rvr=-0.02&nhf=0.0&nhr=0.0&nvf=0.0&nvr=0.0";//angular vertical misalignment
+she2_2="RRL=5.2&RRR=1.25&RFL=2.0&RFR=2.2&NFR=0.2&NFL=0.6&NRR=0.2&NRL=4.3";
+clr2_2="RRL=[10,5]&RRR=[8,7]&RFL=[3,12]&RFR=[5,10]&NFR=[1,14]&NFL=[2,13]&NRR=[7,8]&NRL=[4,11]";
+alg2_3="rhf=0.08&rhr=0.08&rvf=0.05&rvr=-0.02&nhf=0.0&nhr=0.0&nvf=0.0&nvr=0.0";//composite misalignment
+she2_3="RRL=5.2&RRR=1.25&RFL=2.0&RFR=2.2&NFR=0.2&NFL=0.6&NRR=0.2&NRL=4.3";
+clr2_3="RRL=[10,5]&RRR=[8,7]&RFL=[3,12]&RFR=[5,10]&NFR=[1,14]&NFL=[2,13]&NRR=[7,8]&NRL=[4,11]";
+alg3_1="rhf=0.02&rhr=0.02&rvf=0.0&rvr=0.0&nhf=0.0&nhr=0.0&nvf=-0.01&nvr=-0.01";//pararel misalignment
+she3_1="RRL=5.2&RRR=1.25&RFL=2.0&RFR=2.2&NFR=0.2&NFL=0.6&NRR=0.2&NRL=4.3";
+clr3_1="RRL=[10,5]&RRR=[8,7]&RFL=[3,12]&RFR=[5,10]&NFR=[1,14]&NFL=[2,13]&NRR=[7,8]&NRL=[4,11]";
+alg3_2="rhf=0.0&rhr=0.0&rvf=0.05&rvr=-0.02&nhf=0.0&nhr=0.0&nvf=0.0&nvr=0.0";//angular vertical misalignment
+she3_2="RRL=5.2&RRR=1.25&RFL=2.0&RFR=2.2&NFR=0.2&NFL=0.6&NRR=0.2&NRL=4.3";
+clr3_2="RRL=[10,5]&RRR=[8,7]&RFL=[3,12]&RFR=[5,10]&NFR=[1,14]&NFL=[2,13]&NRR=[7,8]&NRL=[4,11]";
+alg3_3="rhf=0.08&rhr=0.08&rvf=0.05&rvr=-0.02&nhf=0.0&nhr=0.0&nvf=0.0&nvr=0.0";//composite misalignment
+she3_3="RRL=5.2&RRR=1.25&RFL=2.0&RFR=2.2&NFR=0.2&NFL=0.6&NRR=0.2&NRL=4.3";
+clr3_3="RRL=[10,5]&RRR=[8,7]&RFL=[3,12]&RFR=[5,10]&NFR=[1,14]&NFL=[2,13]&NRR=[7,8]&NRL=[4,11]";
+InCONF="rad=0.2&height=0.5&Rrear=2.5&Nrear=3.5&right=1.5&equiptHeight=1.8&pSrad=0.2&clockrad=0.3&VFacecsize=0.4&AdDblHcsize=1.0&FlangToShaftFraction=1.6";
+InNCOF="NShlenght=1.5&RShlenght=1.5&Vcsize=0.9&ShaftEndGap=0.0&NClockPOsitionOnShaft=0.0&RClockPOsitionOnShaft=0.0&Hcsize=0.0";
+SPcgib="/bin/foobar_cpp";
+SPlogi="/var/tmp/sessionfile.txt";
+SPimag="/tmp/cuvXX.png";
+

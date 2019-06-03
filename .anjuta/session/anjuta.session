@@ -1,0 +1,30 @@
+[Anjuta]
+Maximized=1
+Geometry=1225x1000+55+24
+
+[File Loader]
+Files=../../src/main.cc#19
+
+[Document Manager]
+bookmarks=<?xml version="1.0" encoding="UTF-8"?>\n<bookmarks/>\n
+
+[Project Manager]
+Expand=foobar-cpp%%%foobar-cpp//src%%%foobar-cpp//src//foobar_cpp%%%foobar-cpp//foobar_cppdoc
+
+[Execution]
+Program uri=../../../../../reza/foobar-cpp/Debug/src/foobar_cpp
+Run in terminal=2
+Working directories=../../../../../reza/foobar-cpp
+
+[Build]
+Configuration list=1:Default:%%%1:Debug:Debug%%%1:Profiling:Profiling%%%1:Optimized:Optimized
+Selected Configuration=Debug
+BuildArgs/Default=--enable-maintainer-mode
+BuildArgs/Debug=--enable-maintainer-mode 'CFLAGS=-g -O0' 'CXXFLAGS=-g -O0' 'JFLAGS=-g -O0' 'FFLAGS=-g -O0'
+BuildArgs/Profiling=--enable-maintainer-mode 'CFLAGS=-g -pg' 'CXXFLAGS=-g -pg' 'JFLAGS=-g -pg' 'FFLAGS=-g -pg'
+BuildArgs/Optimized=--enable-maintainer-mode 'CFLAGS=-O2' 'CXXFLAGS=-O2' 'JFLAGS=-O2' 'FFLAGS=-O2'
+
+[Debugger]
+Watch=t%%%dis
+Breakpoint=1:../../../../../reza/foobar-cpp/src/interface.cc:4294967295:0:%%%1:../../../../../reza/foobar-cpp/src/main.cc:329:0:%%%1:../../../../../reza/foobar-cpp/src/main.cc:267:0:%%%1:../../../../../reza/foobar-cpp/src/main.cc:266:0:%%%1:../../../../../reza/foobar-cpp/src/feetcorrection.cc:106:0:%%%1:../../../../../reza/foobar-cpp/src/feetcorrection.cc:110:0:%%%1:../../../../../reza/foobar-cpp/src/feetcorrection.cc:114:0:%%%1:../../../../../reza/foobar-cpp/src/feetcorrection.cc:118:0:%%%1:../../../../../reza/foobar-cpp/src/feetcorrection.cc:22:0:%%%1:../../../../../reza/foobar-cpp/src/main.cc:252:0:%%%1:../../../../../reza/foobar-cpp/src/x01.cc:4294967295:0:%%%1:../../../../../reza/foobar-cpp/src/x01.cc:4294967295:0:%%%1:../../../../../reza/foobar-cpp/src/main.cc:244:0:%%%1:../../../../../reza/foobar-cpp/src/x01.cc:103:0:%%%1:../../../../../reza/foobar-cpp/src/x01.cc:72:0:%%%1:../../../../../reza/foobar-cpp/src/main.cc:193:0:%%%1:../../../../../reza/foobar-cpp/src/main.cc:190:0:%%%1:../../../../../reza/foobar-cpp/src/main.cc:374:0:%%%1:../../../../../reza/foobar-cpp/src/main.cc:402:0:%%%1:../../../../../reza/foobar-cpp/src/main.cc:404:0:%%%1:../../../../../reza/foobar-cpp/src/main.cc:433:0:
+Stop at beginning=2

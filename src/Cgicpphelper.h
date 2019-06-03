@@ -1,0 +1,198 @@
+/*
+ *  This program is free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+	 *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Library General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program; if not, write to the Free Software
+ *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ */
+
+/*
+
+ CgiCppHelper
+ Janitha Karunaratne (janitha at janitha.com)
+ July 21 2005
+
+	 This is a simple class to assist when developing
+	 c++ applications specifically for the use through a cgi
+	 enviornment.
+
+	 Current features:
+	 * POST request interpretation
+		 * Setting content-type header before outputting anything
+
+		 Usage
+		 * include this file in your applications
+		 * declare a Cgicpphelper object in your applications
+		 * to read a POST variable's value sent to the applications
+		 Cgicpphelper::getvalue("variablename");
+		 and this would return the value
+
+			 Example interpretation
+
+			 //the POST data set var2=value1&var2=value2&vvv3=value3 is sent
+
+#include "Cgicpphelper.h"
+			 int main() {
+				 Cgicpphelper o;
+				 o.getvalue("vvv3");
+				 //would equal to value3
+				 }
+				 */
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <fstream>
+#include <time.h>
+using namespace std;
+/*
+ Keeps each variable - value set
+ */
+class Varset {
+	public:
+		std::string var, value;
+		Varset(std::string var, std::string value)
+			:var(var), value(value) {}
+};
+/*
+ Interprets the POST data sent to CGI Script
+ */
+class Cgicpphelper {
+	private:
+		std::string postdata;
+		std::vector <Varset> vars;
+	public:
+		Cgicpphelper();
+		int login(char* srclog, char* srcbin);
+		bool interpret(std::string input);
+		std::string getvalue(std::string var);
+};
+/*
+ Read the POST request and send to the interpret() to eextract the data
+	 */
+int Cgicpphelper::login(char* srclog,char* srcbin)
+{
+	if(strcmp(getenv("REQUEST_METHOD"),"POST")==0)
+	{
+		if(getvalue("pass")!="vafa" || getvalue("user")!="mkhooran")
+		{
+			cout << "Content-Type: text/html; charset=ISO-8859-1" << endl << endl;
+			cout<<"Login Error!";
+			cout<<getvalue("pass");
+			cout<<getvalue("user");			
+			return 0;
+		}
+		else
+		{
+			fstream sessionfile;
+			sessionfile.open (srclog,fstream::out | fstream::app);
+			if(!sessionfile.fail())
+			{
+				srand (time(NULL));
+				int rn=rand();				
+				sessionfile.seekp(0,ios_base::end);
+				sessionfile<<"username="<<getvalue("user")<<"; userno="<<rn<<"; REMOTE_ADDR="<<getenv("REMOTE_ADDR")<<endl;
+				sessionfile.close();
+				cout << "Set-Cookie: username=" <<getvalue("user")<< "; domain="<< getenv("SERVER_NAME")<<" ;path="<< srcbin << endl;      
+				cout << "Set-Cookie: userno="<<rn<< "; domain="<< getenv("SERVER_NAME")<<" ;path="<< srcbin << endl;      
+				//Log In
+			}
+			else
+			{
+				cout << "Content-Type: text/html; charset=ISO-8859-1" << endl << endl;
+				cout<<"file fail";
+				return 0;
+			}
+		}
+	}
+	else //Get Request
+	{
+		bool ckhlog=false;
+		string HTTP_COOKIE;
+		if(getenv("HTTP_COOKIE")==NULL)
+		{
+			cout<< "Content-Type: text/html; charset=ISO-8859-1" << endl << endl;
+			cout<<"Login First Plz";
+			return 0;
+		}
+		else
+			HTTP_COOKIE=getenv("HTTP_COOKIE");
+		fstream sessionfile;
+		string str,sstr;
+		sessionfile.open (srclog,fstream::in);
+		while(!sessionfile.eof() && !ckhlog)
+		{
+			getline(sessionfile,str);
+			sstr=str.substr(str.find("username=")+9,str.find("userno=")-11);
+			if(HTTP_COOKIE.find(sstr)!=string::npos)
+			{
+
+				sstr=str.substr(str.find("userno="),str.find(" REMOTE_ADDR=")-str.find("userno=")-1);
+				if(HTTP_COOKIE.find(sstr)!=string::npos)
+				{
+					sstr=str.substr(str.find("REMOTE_ADDR=")+12);
+					if(sstr==getenv("REMOTE_ADDR"))
+						ckhlog=true;
+				}
+			}
+		}
+		if (!ckhlog)
+		{
+			cout<< "Content-Type: text/html; charset=ISO-8859-1" << endl << endl;
+			cout<<"Login First Plz";
+			return 0;
+		}
+	}
+	return 1;
+}
+Cgicpphelper::Cgicpphelper()
+{
+	std::cin >> postdata;
+	interpret(postdata);
+}
+/*
+ Takes the variable and value from a POST request
+ var1=value1&var2=value2
+ Recursive
+ */
+bool Cgicpphelper::interpret(std::string input)
+{
+	std::string var, value;
+	//extract the variable and value
+	var = input.substr(0,input.find("=",0));
+	value = input.substr(input.find("=",0)+1, input.find("&",0)-input.find("=",0)-1);
+	vars.push_back(Varset(var,value));
+	//checks if it has reach the last variable, since at end there is no &
+	if(input.find("&",0) == -1)
+		return true;
+	//get rid of used variable and value
+	input.erase(0,input.find("&",0)+1);
+	//recursively call the interpret function with the
+	//trucated input for data extraction
+	if(input.size() > 1)
+		interpret(input);
+}
+/*
+ function which returns if variable with asked name is sent
+ returns the value if present, else returns a -1
+ */
+std::string Cgicpphelper::getvalue(string var)
+{
+	for(std::vector <Varset>::iterator it = vars.begin(); it != vars.end(); it++)
+		if(it->var == var)
+		return it->value;
+	return "-1";
+}
+/*
+ Sends the Content-Type: to client for browser usability
+ include anything else you want to be included in the header
+ */
+//eof
